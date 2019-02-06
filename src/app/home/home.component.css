@@ -1,0 +1,26 @@
+.container{
+    width: 900px;
+    height: 600px;
+    margin: auto;
+}
+.headerContainer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.mainContent{
+    width: 700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 350px;
+}
+.textHolder{
+    text-align: justify;
+}
+.imageHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

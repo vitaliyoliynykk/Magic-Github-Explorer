@@ -1,0 +1,43 @@
+.container{
+    width: 900px;
+    height: 90vh;
+    margin: auto;
+    border: 1px solid black;
+}
+.header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.header img {
+    height: 80px;
+    border-radius: 50px;
+}
+.detailsItem{
+    height: 50px;
+    margin: 10px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+h3{
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+p{
+    font-size: 20px;
+    margin: 0px;
+    margin-left: 10px;
+}
+span{
+    font-size: 18px;
+    margin: 10px;
+}
+.reposContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

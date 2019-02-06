@@ -1,0 +1,33 @@
+header, footer{
+    width: auto;
+    height: 75px;
+    margin: auto;
+    background-color:#efefef;
+    display: flex;
+    justify-content: space-between;
+}
+.logoHolder{
+    height: auto;
+    width:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+nav{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+a{
+    margin-right: 5px;
+    color: black;
+}

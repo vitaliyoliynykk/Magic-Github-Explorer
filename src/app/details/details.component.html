@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="header">
+      <div>
+          <img src="{{user.avatar_url}}" alt="profile photo">
+          
+      </div>
+      <div>
+          <h2>@{{user.login}}</h2>
+      </div>
+      <div class="linkHolder">
+        <a href="{{user.html_url}}" target="_blank">Open on Github</a>
+      </div>
+  </div>
+  <div class="details">
+    <div class="detailsItem"  *ngIf="user.name">
+      <h3>Name:</h3>
+      <p>{{user.name}}</p>
+    </div>
+    <div class="detailsItem" *ngIf="user.created_at">
+      <h3>Created at:</h3>
+      <p>{{user.created_at | date:'short'}}</p>
+    </div>
+    <div class="detailsItem" *ngIf="user.location">
+      <h3>Location:</h3>
+      <p>{{user.location}}</p>
+    </div>
+    <div class="detailsItem" *ngIf="user.company">
+      <h3>Company:</h3>
+      <p>{{user.company}}</p>
+    </div>
+    <div class="detailsItem" *ngIf="user.email">
+      <h3>Email:</h3>
+      <p>{{user.email}}</p>
+    </div>
+  </div>
+  <div class="repos">
+     <div class="detailsItem">
+          <p>Repos</p>
+        </div>
+        <div class="reposContainer">
+          <span *ngFor="let repo of repos">
+            <a href="{{repo.html_url}}" target="_blank">{{repo.name}}</a>
+          </span>
+        </div>
+  </div>  
+</div>

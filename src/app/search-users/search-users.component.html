@@ -1,0 +1,20 @@
+
+<div class = "container"> 
+  <div class ="searchUsers">
+    <h2>Search Users</h2>
+    <form >
+        <input [(ngModel)] = "this.searchQuery" name="name">
+        <button (click)="getUsers()">Search</button>
+    </form>
+  </div>
+  <div class="userItem" *ngFor="let user of items">
+    <div class="imageHolder">
+        <img src="{{user.avatar_url}}" alt="profile photo">
+        <p>@{{user.login}}</p>
+    </div>
+    <div class="linkHolder">
+      <a routerLink="/search/{{user.login}}">View Details</a>
+      <a href="{{user.html_url}}" target="_blank">Open on Github</a>
+    </div>
+  </div>
+</div>

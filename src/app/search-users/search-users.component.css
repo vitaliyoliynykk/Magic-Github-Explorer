@@ -1,0 +1,40 @@
+.container{
+    padding: 0px;
+    width:900px;
+    min-height: 600px;
+    margin:auto;
+}
+.searchUsers{
+    
+    height: 75px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.userItem{
+    height: 75px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border-bottom: 1px black solid;
+}
+.imageHolder img{
+    height: 50px;
+    margin-left:25px;
+    border-radius: 50px;
+}
+.imageHolder p{
+    margin-left: 10px;
+    font-size: 16pt;
+}
+.imageHolder{
+    display: flex;
+    align-items: center;
+}
+.linkHolder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
